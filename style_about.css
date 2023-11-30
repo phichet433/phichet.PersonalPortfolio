@@ -1,0 +1,327 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-image: url(images1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color:red;
+    transition: .4s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    nav ul li {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        padding: 8px 12px;
+    }
+}
+
+/* Base Styles */
+.about {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.about img {
+    height: auto;
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 430px; /* Set a maximum width for the image */
+}
+
+.about-me {
+    width: 80%; /* Make the about-me section responsive */
+    margin: 100px 20px 50px; 
+}
+
+.main {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me h2 {
+    color: white;
+    font-size: 40px; /* Adjust font size for smaller screens */
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-me h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-me p {
+    color: white;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .main {
+        flex-direction: row; /* Display items in a row on larger screens */
+    }
+
+    .about-me h2 {
+        font-size: 75px; /* Restore original font size on larger screens */
+    }
+
+    .about-me h5 {
+        font-size: 22px; /* Restore original font size on larger screens */
+    }
+
+    .about-me p {
+        font-size: 18px; /* Restore original font size on larger screens */
+    }
+
+    button {
+        padding: 13px 30px; /* Restore original button padding on larger screens */
+    }
+}
+
+
+/* Base Styles */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+
+.footer-content p {
+    max-width: 100%;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 1px;
+}
+
+.social li {
+    margin: 0 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i {
+    color: red;
+}
+
+.footer-bottom {
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 10px 0;
+}
+
+.tab-links {
+    margin-right: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 80%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tab-contents ul li span {
+    color: #f9004d;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tab-contents {
+    display: none;
+    height: auto;
+    flex-direction: column;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .footer-content h3 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .social a i {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .footer-bottom p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .tab-links {
+        margin-right: 40px; /* Adjust margin for smaller screens */
+    }
+
+    .tab-contents ul li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .tab-contents ul li span {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}

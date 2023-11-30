@@ -1,0 +1,246 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-image: url(images1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: .4s;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+}
+
+.content {
+    position: relative;
+    padding: 8% 8%;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.navigation-about {
+    height: 100vh;
+    width: 100%;
+    background-image: url(background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile{
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    text-align: center;
+    float: right;
+}
+
+.profile img {
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image */
+    max-width: 100%; /* Make the image responsive within its container */
+    height: auto; /* Automatically adjust the height based on the width */
+    border-radius: 50%;
+    position: relative;
+    height: auto;
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 430px; /* Set a maximum width for the image */
+}
+
+@media only screen and (min-width: 768px) {
+    /* Adjustments for larger screens if needed */
+    .profile {
+        margin: -350px 20px 20px 20px;
+    }
+
+    .profile img{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+
+.footer-content p {
+    max-width: 100%;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 1px;
+}
+
+.social li {
+    margin: 0 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i {
+    color: red;
+}
+
+.footer-bottom {
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .social a i {
+        font-size: 1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

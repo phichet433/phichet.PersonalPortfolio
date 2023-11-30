@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style_contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="navigation-about">
+        <nav>
+            <h2 class="logo"><span>My</span> Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutMe.html">About Us</a></li>
+                <li><a href="myProject.html">My Project</a></li>
+                <li><a href="contactMe.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="contact">
+        <div class="contact-me">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's Talk with Me</p>
+        </div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Lot 115 Kampung Terbak <br>16200 Tumpat Kelantan</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>011-25731614</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>phichet433@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form name="contactUs" action="" method="get">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="fullName" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Type yours message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="submit" value="Send" onClick="return send()"">
+                    </div>
+                </form>
+            </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>Phichet Inthaweerath</h3>
+            <p>This is my portfolio website.</p>
+             <ul class="social">
+                <li><a href="https://www.facebook.com/login.php/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+             </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright By PHICHET</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
